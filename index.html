@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ПромГБ — поставки угля</title>
+  <style>
+    body { font-family: Arial, sans-serif; line-height: 1.6; margin: 0; padding: 0; background: #f8f9fa; }
+    header, section, footer { padding: 40px 20px; max-width: 960px; margin: auto; }
+    header { background: #222; color: #fff; text-align: center; }
+    header h1 { font-size: 32px; margin-bottom: 10px; }
+    header p { font-size: 18px; }
+    .btn { display: inline-block; background: #007bff; color: #fff; padding: 10px 20px; margin: 10px; text-decoration: none; border-radius: 4px; }
+    h2 { color: #222; border-bottom: 2px solid #007bff; padding-bottom: 5px; }
+    table { width: 100%; border-collapse: collapse; margin-top: 20px; }
+    th, td { border: 1px solid #ccc; padding: 10px; text-align: left; }
+    ul { padding-left: 20px; }
+    footer { background: #222; color: #fff; text-align: center; }
+    form input, form select, form textarea { width: 100%; padding: 10px; margin: 10px 0; }
+    form button { background: #28a745; color: #fff; border: none; padding: 10px 20px; }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Каражыра — официальный поставщик угля в Омске</h1>
+    <p>Прямые поставки с разрезов Казахстана и Хакасии. Надёжно. Выгодно. С доставкой.</p>
+    <a href="#contact" class="btn">Оставить заявку</a>
+    <a href="#products" class="btn">Посмотреть цены</a>
+  </header>
+
+  <section id="products">
+    <h2>Продукция</h2>
+    <table>
+      <thead>
+        <tr><th>Вид угля</th><th>Фракция</th><th>Упаковка</th><th>Примечания</th></tr>
+      </thead>
+      <tbody>
+        <tr><td>ДР 0–300</td><td>0–300 мм</td><td>навалом</td><td>Длиннопламенный рядовой</td></tr>
+        <tr><td>ДР 25–50</td><td>25–50 мм</td><td>навалом</td><td>Длиннопламенный орех</td></tr>
+        <tr><td>ДПК 50–200</td><td>50–200 мм</td><td>навалом</td><td>Плита крупная</td></tr>
+        <tr><td>ДПКО 25–200</td><td>25–200 мм</td><td>навалом</td><td>Плита крупная + орех</td></tr>
+        <tr><td>Семечка</td><td>6–13 мм / 5–20 мм</td><td>Big-Bag 1000 кг</td><td>Для населения</td></tr>
+      </tbody>
+    </table>
+  </section>
+
+  <section>
+    <h2>Преимущества</h2>
+    <ul>
+      <li>Более 20 лет на рынке</li>
+      <li>Прямые поставки без посредников</li>
+      <li>Доставка по Омску и области</li>
+      <li>Гарантия качества: без породы, высокая калорийность</li>
+      <li>Отсрочка платежа по договору</li>
+      <li>Работаем с физлицами, ИП, госорганизациями</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>О компании</h2>
+    <p>ООО «ПромГБ» — крепкий поставщик для твёрдых решений. Мы специализируемся на поставках угля различных марок с крупнейших разрезов Каражыра (Казахстан) и Кирбинский (Хакасия). Обеспечим логистику, документы и стабильные поставки. Индивидуальный подход — каждому клиенту.</p>
+  </section>
+
+  <section>
+    <h2>Складская логистика</h2>
+    <ul>
+      <li>Любинская (код 83180)</li>
+      <li>Москаленская (83220)</li>
+      <li>Стрела (834502)</li>
+      <li>Любовка (834700)</li>
+      <li>Называевская (83160)</li>
+      <li>Калачинская (83280)</li>
+      <li>Карбышева-1 (830304)</li>
+    </ul>
+  </section>
+
+  <section id="contact">
+    <h2>Контакты</h2>
+    <p><strong>Отдел продаж:</strong> 8 (923) 673-80-19<br>
+    <strong>Email:</strong> promgbomsk@mail.ru<br>
+    <strong>Генеральный директор:</strong> О.В. Бабенко</p>
+
+    <h3>Оставьте заявку</h3>
+    <form action="mailto:promgbomsk@mail.ru" method="post" enctype="text/plain">
+      <input type="text" name="name" placeholder="Ваше имя" required>
+      <input type="tel" name="phone" placeholder="Телефон" required>
+      <select name="coal_type">
+        <option>Выберите вид угля</option>
+        <option>ДР 0-300</option>
+        <option>ДР 25-50</option>
+        <option>ДПК 50-200</option>
+        <option>ДПКО 25-200</option>
+        <option>Семечка</option>
+      </select>
+      <input type="text" name="volume" placeholder="Объем, т">
+      <textarea name="message" placeholder="Станция отгрузки / адрес доставки"></textarea>
+      <button type="submit">Отправить заявку</button>
+    </form>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 ООО «ПромГБ» — официальный поставщик угля. Все права защищены.</p>
+  </footer>
+</body>
+</html>
