@@ -3,113 +3,64 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Купить уголь в Омске — ПромГБ</title>
+  <title>Купить уголь в Омске от ПромГБ</title>
   <style>
-    body { font-family: 'Segoe UI', sans-serif; margin: 0; background: #f8f9fa; color: #1e1e1e; }
+    body { margin: 0; font-family: 'Segoe UI', sans-serif; background: #f8f9fa; color: #1e1e1e; }
     a { text-decoration: none; }
-    header, section, footer { max-width: 1140px; margin: auto; padding: 40px 20px; }
-    header { background: #1f1f1f; color: #fff; text-align: center; padding-top: 60px; padding-bottom: 60px; }
-    header h1 { font-size: 42px; margin-bottom: 20px; }
-    header p { font-size: 20px; color: #d7d7d7; margin-bottom: 30px; }
-    .cta-buttons a { display: inline-block; background: #d35400; color: #fff; padding: 15px 30px; margin: 10px; border-radius: 5px; font-weight: bold; transition: background 0.3s; }
-    .cta-buttons a:hover { background: #e67e22; }
+    header { background: #1e1e1e; color: #fff; padding: 60px 20px 30px; text-align: center; }
+    header h1 { font-size: 40px; margin-bottom: 15px; }
+    header p { font-size: 18px; margin-bottom: 25px; color: #ccc; }
 
-    h2 { color: #d35400; border-bottom: 2px solid #d35400; padding-bottom: 5px; margin-top: 60px; }
-    .product-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 20px; margin-top: 30px; }
-    .product-card { background: #fff; border: 1px solid #ddd; padding: 20px; border-radius: 8px; }
-    .product-card h3 { margin: 0 0 10px; font-size: 18px; color: #333; }
-    .product-card p { margin: 5px 0; }
+    .form-inline { display: flex; flex-wrap: wrap; justify-content: center; gap: 10px; margin-top: 20px; }
+    .form-inline input, .form-inline select, .form-inline button {
+      padding: 12px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      font-size: 16px;
+    }
+    .form-inline input, .form-inline select { width: 200px; }
+    .form-inline button {
+      background: #d35400;
+      color: #fff;
+      border: none;
+      cursor: pointer;
+      transition: background 0.3s;
+    }
+    .form-inline button:hover { background: #e67e22; }
 
-    .benefits-list li { margin-bottom: 12px; padding-left: 20px; position: relative; }
-    .benefits-list li::before { content: "✔"; color: #27ae60; position: absolute; left: 0; }
+    section { max-width: 1100px; margin: auto; padding: 40px 20px; }
+    h2 { font-size: 28px; color: #d35400; border-bottom: 2px solid #d35400; padding-bottom: 8px; margin-bottom: 20px; }
+    .products { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 20px; }
+    .product { background: #fff; border: 1px solid #ddd; border-radius: 6px; padding: 20px; }
+    .product h3 { margin: 0 0 10px; color: #1e1e1e; }
+    .product p { margin: 5px 0; font-size: 14px; }
+    .product button {
+      background: #27ae60;
+      color: #fff;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 4px;
+      margin-top: 10px;
+      cursor: pointer;
+      transition: background 0.3s;
+    }
+    .product button:hover { background: #2ecc71; }
 
-    .logistics-list li { margin-bottom: 6px; }
+    .advantages, .logistics, .reviews { background: #fff; border-radius: 8px; padding: 20px; margin-top: 30px; }
+    .advantages li, .logistics li, .reviews li { margin-bottom: 10px; }
 
-    form input, form select, form textarea { width: 100%; padding: 12px; margin: 10px 0; border: 1px solid #ccc; border-radius: 4px; }
-    form button { background: #27ae60; color: #fff; border: none; padding: 14px 28px; font-weight: bold; border-radius: 4px; cursor: pointer; transition: background 0.3s; }
-    form button:hover { background: #2ecc71; }
-
-    footer { background: #1f1f1f; color: #ccc; text-align: center; padding: 30px 20px; font-size: 14px; }
+    footer { background: #1e1e1e; color: #ccc; text-align: center; padding: 30px 20px; font-size: 14px; }
   </style>
 </head>
 <body>
   <header>
-    <h1>Купить уголь с доставкой по Омску и области</h1>
-    <p>ПромГБ — надёжные поставки угля от Каражыра и Кирбинского разрезов. Без породы. Быстрая доставка. Гибкая оплата.</p>
-    <div class="cta-buttons">
-      <a href="#products">Посмотреть цены</a>
-      <a href="#contact">Оформить заказ</a>
-    </div>
-  </header>
-
-  <section id="products">
-    <h2>Цены и ассортимент угля</h2>
-    <div class="product-grid">
-      <div class="product-card">
-        <h3>ДР 0–300</h3>
-        <p>Фракция: 0–300 мм</p>
-        <p>Тип: Длиннопламенный рядовой</p>
-        <p>Упаковка: навалом</p>
-      </div>
-      <div class="product-card">
-        <h3>ДР 25–50</h3>
-        <p>Фракция: 25–50 мм</p>
-        <p>Тип: Длиннопламенный орех</p>
-        <p>Упаковка: навалом</p>
-      </div>
-      <div class="product-card">
-        <h3>ДПК 50–200</h3>
-        <p>Фракция: 50–200 мм</p>
-        <p>Тип: Длиннопламенная плита</p>
-        <p>Упаковка: навалом</p>
-      </div>
-      <div class="product-card">
-        <h3>ДПКО 25–200</h3>
-        <p>Фракция: 25–200 мм</p>
-        <p>Комбинация: Орех + плита</p>
-        <p>Упаковка: навалом</p>
-      </div>
-      <div class="product-card">
-        <h3>Семечка</h3>
-        <p>Фракция: 6–13 мм или 5–20 мм</p>
-        <p>Упаковка: Big-Bag 1000 кг</p>
-        <p>Для частных клиентов и котлов</p>
-      </div>
-    </div>
-  </section>
-
-  <section>
-    <h2>Почему выбирают ПромГБ</h2>
-    <ul class="benefits-list">
-      <li>Более 20 лет стабильной работы</li>
-      <li>Прямые поставки с Каражыра и Хакасии</li>
-      <li>Отсутствие породы — только уголь</li>
-      <li>Гибкая оплата и отсрочка для организаций</li>
-      <li>Доставка в любую точку Омской области</li>
-      <li>Индивидуальные условия для оптовиков</li>
-    </ul>
-  </section>
-
-  <section>
-    <h2>Где мы отгружаем</h2>
-    <ul class="logistics-list">
-      <li>🚚 Станция Любинская (код 83180)</li>
-      <li>🚚 Станция Москаленская (83220)</li>
-      <li>🚚 Станция Стрела (834502)</li>
-      <li>🚚 Станция Любовка (834700)</li>
-      <li>🚚 Станция Называевская (83160)</li>
-      <li>🚚 Станция Калачинская (83280)</li>
-      <li>🚚 Карбышева-1 (830304)</li>
-    </ul>
-  </section>
-
-  <section id="contact">
-    <h2>Оставьте заявку — перезвоним за 10 минут</h2>
-    <form action="mailto:promgbomsk@mail.ru" method="post" enctype="text/plain">
+    <h1>Уголь с доставкой по Омску и области от 1 тонны</h1>
+    <p>ПромГБ — прямые поставки с Каражыра и Кирбинского разрезов. Качество, цена, скорость.</p>
+    <form class="form-inline" action="mailto:promgbomsk@mail.ru" method="post" enctype="text/plain">
       <input type="text" name="name" placeholder="Ваше имя" required>
       <input type="tel" name="phone" placeholder="Телефон" required>
       <select name="coal_type">
-        <option disabled selected>Выберите вид угля</option>
+        <option disabled selected>Вид угля</option>
         <option>ДР 0-300</option>
         <option>ДР 25-50</option>
         <option>ДПК 50-200</option>
@@ -117,9 +68,75 @@
         <option>Семечка</option>
       </select>
       <input type="text" name="volume" placeholder="Объем (т)">
-      <textarea name="message" placeholder="Адрес доставки или станция отгрузки"></textarea>
-      <button type="submit">Отправить заявку</button>
+      <button type="submit">Заказать</button>
     </form>
+  </header>
+
+  <section>
+    <h2>Ассортимент угля</h2>
+    <div class="products">
+      <div class="product">
+        <h3>ДР 0–300</h3>
+        <p>Фракция: 0–300 мм</p>
+        <p>Рядовой длиннопламенный</p>
+        <p>Упаковка: навалом</p>
+        <button>Оформить заявку</button>
+      </div>
+      <div class="product">
+        <h3>ДР 25–50</h3>
+        <p>Фракция: 25–50 мм</p>
+        <p>Орех, высокая калорийность</p>
+        <p>Упаковка: навалом</p>
+        <button>Оформить заявку</button>
+      </div>
+      <div class="product">
+        <h3>ДПК 50–200</h3>
+        <p>Фракция: 50–200 мм</p>
+        <p>Плита крупная</p>
+        <p>Упаковка: навалом</p>
+        <button>Оформить заявку</button>
+      </div>
+      <div class="product">
+        <h3>Семечка</h3>
+        <p>Фракция: 6–13 мм или 5–20 мм</p>
+        <p>Big-Bag 1000 кг</p>
+        <p>Для населения</p>
+        <button>Оформить заявку</button>
+      </div>
+    </div>
+  </section>
+
+  <section class="advantages">
+    <h2>Преимущества ПромГБ</h2>
+    <ul>
+      <li>20+ лет на рынке</li>
+      <li>Прямые поставки с Каражыра и Хакасии</li>
+      <li>Низкая зольность, без породы</li>
+      <li>Отгрузка от 1 т</li>
+      <li>Быстрая доставка и точный вес</li>
+      <li>Гибкая оплата, работа с юр.лицами</li>
+    </ul>
+  </section>
+
+  <section class="logistics">
+    <h2>Станции отгрузки</h2>
+    <ul>
+      <li>Любинская (код 83180)</li>
+      <li>Москаленская (код 83220)</li>
+      <li>Стрела (код 834502)</li>
+      <li>Любовка (код 834700)</li>
+      <li>Называевская (код 83160)</li>
+      <li>Калачинская (код 83280)</li>
+      <li>Карбышева-1 (код 830304)</li>
+    </ul>
+  </section>
+
+  <section class="reviews">
+    <h2>Отзывы клиентов</h2>
+    <ul>
+      <li>«Быстро, чётко, без обмана. Уголь хороший, отгрузка была в срок.» — ИП Фролов</li>
+      <li>«Работаем третий год — качество стабильно. Поддержка и расчёт удобные.» — ООО «ТеплоИнвест»</li>
+    </ul>
   </section>
 
   <footer>
