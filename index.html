@@ -45,14 +45,21 @@
     }
     .form-inline button:hover { background: #e67e22; }
 
+    .cta-buttons {
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+      max-width: 320px;
+      margin: 0 auto;
+    }
     .cta-button {
-      display: inline-block;
-      margin-top: 20px;
+      display: block;
       padding: 14px 24px;
       background: #27ae60;
       color: white;
       border-radius: 6px;
       font-weight: bold;
+      text-align: center;
     }
     .cta-button.secondary {
       background: #2980b9;
@@ -110,7 +117,7 @@
   <header>
     <h1>Уголь с доставкой по Омску и области от 1 тонны</h1>
     <div class="slider" id="slider-text"></div>
-    <div>
+    <div class="cta-buttons">
       <a href="#" onclick="scrollToForm()" class="cta-button">Оставить заявку</a>
       <a href="/price.pdf" class="cta-button secondary">Скачать прайс</a>
     </div>
