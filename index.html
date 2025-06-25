@@ -10,27 +10,27 @@
     header { background: #1e1e1e; color: #fff; padding: 60px 20px 30px; text-align: center; position: relative; overflow: hidden; }
     header h1 { font-size: 40px; margin-bottom: 15px; }
     header p { font-size: 18px; margin-bottom: 25px; color: #ccc; }
-    .slider {
-      font-size: 20px;
-      color: #f39c12;
-      margin-bottom: 20px;
-      min-height: 30px;
-      font-weight: bold;
-      animation: fadeIn 2s ease-in-out;
-    }
-    @keyframes fadeIn {
-      from { opacity: 0; }
-      to { opacity: 1; }
-    }
+    .slider { font-size: 20px; color: #f39c12; margin-bottom: 20px; min-height: 30px; font-weight: bold; animation: fadeIn 2s ease-in-out; }
+    @keyframes fadeIn { from { opacity: 0; } to { opacity: 1; } }
 
-    .form-inline { display: flex; flex-wrap: wrap; justify-content: center; gap: 10px; margin-top: 20px; }
-    .form-inline input, .form-inline select, .form-inline button {
-      padding: 12px;
+    .form-inline {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      max-width: 360px;
+      margin: 0 auto;
+      gap: 12px;
+    }
+    .form-inline input,
+    .form-inline select,
+    .form-inline button {
+      width: 100%;
+      padding: 14px;
       border: 1px solid #ccc;
       border-radius: 4px;
       font-size: 16px;
+      box-sizing: border-box;
     }
-    .form-inline input, .form-inline select { width: 200px; }
     .form-inline button {
       background: #d35400;
       color: #fff;
@@ -91,7 +91,7 @@
     <form class="form-inline" action="mailto:promgbomsk@mail.ru" method="post" enctype="text/plain">
       <input type="text" name="name" placeholder="Ваше имя" required>
       <input type="tel" name="phone" placeholder="Телефон" required>
-      <select name="coal_type">
+      <select name="coal_type" required>
         <option disabled selected>Вид угля</option>
         <option>ДР 0-300</option>
         <option>ДР 25-50</option>
