@@ -1,18 +1,71 @@
 <!DOCTYPE html>
 <html lang="ru">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Купить уголь в Омске от ПромГБ</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4v5VtYBXJq6r9Gq4cEew9S3U9aPt7xUSgA6WpqZgPQH3p4ViXQXv+zXnM+yQH0RgGJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
   <style>
-    body { margin: 0; font-family: 'Segoe UI', sans-serif; background: #f8f9fa; color: #1e1e1e; }
-    a { text-decoration: none; }
-    header { background: #1e1e1e; color: #fff; padding: 60px 20px 30px; text-align: center; position: relative; overflow: hidden; }
-    header h1 { font-size: 40px; margin-bottom: 15px; }
-    header p { font-size: 18px; margin-bottom: 25px; color: #ccc; }
-    .slider { font-size: 20px; color: #f39c12; margin-bottom: 20px; min-height: 30px; font-weight: bold; animation: fadeIn 2s ease-in-out; }
-    @keyframes fadeIn { from { opacity: 0; } to { opacity: 1; } }
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background: #f8f9fa;
+      color: #1e1e1e;
+    }
+    a {
+      text-decoration: none;
+    }
+    header {
+      background: #1e1e1e;
+      color: #fff;
+      padding: 60px 20px 30px;
+      text-align: center;
+    }
+    header h1 {
+      font-size: 40px;
+      margin-bottom: 15px;
+    }
+    .slider {
+      font-size: 20px;
+      color: #f39c12;
+      margin-bottom: 20px;
+      font-weight: bold;
+      min-height: 30px;
+    }
+    .cta-buttons {
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+      max-width: 320px;
+      margin: 0 auto;
+    }
+    .cta-button {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+      padding: 14px 24px;
+      background: #27ae60;
+      color: white;
+      border-radius: 6px;
+      font-weight: bold;
+    }
+    .cta-button.secondary {
+      background: #2980b9;
+    }
 
+    section {
+      max-width: 1100px;
+      margin: auto;
+      padding: 40px 20px;
+    }
+    h2 {
+      font-size: 28px;
+      color: #d35400;
+      border-bottom: 2px solid #d35400;
+      padding-bottom: 8px;
+      margin-bottom: 20px;
+    }
     .form-inline {
       display: flex;
       flex-direction: column;
@@ -32,62 +85,62 @@
       font-size: 16px;
       box-sizing: border-box;
     }
-    .form-inline select {
-      appearance: none;
-      background: #fff;
-    }
     .form-inline button {
       background: #d35400;
-      color: #fff;
+      color: white;
       border: none;
       cursor: pointer;
-      transition: background 0.3s;
     }
-    .form-inline button:hover { background: #e67e22; }
+    .form-inline button:hover {
+      background: #e67e22;
+    }
 
-    .cta-buttons {
-      display: flex;
-      flex-direction: column;
-      gap: 12px;
-      max-width: 320px;
-      margin: 0 auto;
+    .products {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 20px;
     }
-    .cta-button {
-      display: block;
-      padding: 14px 24px;
-      background: #27ae60;
-      color: white;
+    .product {
+      background: #fff;
+      border: 1px solid #ddd;
       border-radius: 6px;
-      font-weight: bold;
+      padding: 20px;
       text-align: center;
     }
-    .cta-button.secondary {
-      background: #2980b9;
-    }
-
-    section { max-width: 1100px; margin: auto; padding: 40px 20px; }
-    h2 { font-size: 28px; color: #d35400; border-bottom: 2px solid #d35400; padding-bottom: 8px; margin-bottom: 20px; }
-    .products { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 20px; }
-    .product { background: #fff; border: 1px solid #ddd; border-radius: 6px; padding: 20px; text-align: center; }
-    .product h3 { margin: 0 0 10px; color: #1e1e1e; }
-    .product p { margin: 5px 0; font-size: 14px; }
     .product button {
       background: #27ae60;
-      color: #fff;
+      color: white;
       padding: 10px 20px;
       border: none;
       border-radius: 4px;
       margin-top: 10px;
+      font-size: 15px;
       cursor: pointer;
-      transition: background 0.3s;
     }
-    .product button:hover { background: #2ecc71; }
+    .product button i {
+      margin-right: 6px;
+    }
 
-    .advantages, .logistics, .reviews { background: #fff; border-radius: 8px; padding: 20px; margin-top: 30px; }
-    .advantages li, .logistics li, .reviews li { margin-bottom: 10px; }
-
-    #map { width: 100%; height: 400px; margin-top: 30px; border: 1px solid #ccc; border-radius: 6px; }
-    footer { background: #1e1e1e; color: #ccc; text-align: center; padding: 30px 20px; font-size: 14px; }
+    .advantages, .logistics, .reviews {
+      background: #fff;
+      border-radius: 8px;
+      padding: 20px;
+      margin-top: 30px;
+    }
+    #map {
+      width: 100%;
+      height: 400px;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+      margin-top: 30px;
+    }
+    footer {
+      background: #1e1e1e;
+      color: #ccc;
+      text-align: center;
+      padding: 30px 20px;
+      font-size: 14px;
+    }
   </style>
   <script>
     const sliderPhrases = [
@@ -118,16 +171,16 @@
     <h1>Уголь с доставкой по Омску и области от 1 тонны</h1>
     <div class="slider" id="slider-text"></div>
     <div class="cta-buttons">
-      <a href="#" onclick="scrollToForm()" class="cta-button">Оставить заявку</a>
-      <a href="/price.pdf" class="cta-button secondary">Скачать прайс</a>
+      <a href="#" onclick="scrollToForm()" class="cta-button"><i class="fas fa-edit"></i> Оставить заявку</a>
+      <a href="/price.pdf" class="cta-button secondary"><i class="fas fa-download"></i> Скачать прайс</a>
     </div>
   </header>
 
   <section id="main-form">
     <h2>Быстрая заявка</h2>
     <form class="form-inline" action="mailto:promgbomsk@mail.ru" method="post" enctype="text/plain">
-      <input type="text" name="name" placeholder="Ваше имя" required>
-      <input type="tel" name="phone" placeholder="Телефон" required>
+      <input type="text" name="name" placeholder="Ваше имя" required />
+      <input type="tel" name="phone" placeholder="Телефон" required />
       <select name="coal_type" required>
         <option disabled selected>Вид угля</option>
         <option>ДР 0-300</option>
@@ -136,7 +189,7 @@
         <option>ДПКО 25-200</option>
         <option>Семечка</option>
       </select>
-      <input type="text" name="volume" placeholder="Объем (т)">
+      <input type="text" name="volume" placeholder="Объем (т)" />
       <button type="submit">Заказать</button>
     </form>
   </section>
@@ -149,28 +202,28 @@
         <p>Фракция: 0–300 мм</p>
         <p>Рядовой длиннопламенный</p>
         <p>Упаковка: навалом</p>
-        <button onclick="scrollToForm()">Заказать</button>
+        <button onclick="scrollToForm()"><i class="fas fa-shopping-cart"></i> Заказать</button>
       </div>
       <div class="product">
         <h3>ДР 25–50</h3>
         <p>Фракция: 25–50 мм</p>
         <p>Орех, высокая калорийность</p>
         <p>Упаковка: навалом</p>
-        <button onclick="scrollToForm()">Заказать</button>
+        <button onclick="scrollToForm()"><i class="fas fa-shopping-cart"></i> Заказать</button>
       </div>
       <div class="product">
         <h3>ДПК 50–200</h3>
         <p>Фракция: 50–200 мм</p>
         <p>Плита крупная</p>
         <p>Упаковка: навалом</p>
-        <button onclick="scrollToForm()">Заказать</button>
+        <button onclick="scrollToForm()"><i class="fas fa-shopping-cart"></i> Заказать</button>
       </div>
       <div class="product">
         <h3>Семечка</h3>
         <p>Фракция: 6–13 мм или 5–20 мм</p>
         <p>Big-Bag 1000 кг</p>
         <p>Для населения</p>
-        <button onclick="scrollToForm()">Заказать</button>
+        <button onclick="scrollToForm()"><i class="fas fa-shopping-cart"></i> Заказать</button>
       </div>
     </div>
   </section>
@@ -219,14 +272,14 @@
     ymaps.ready(function () {
       var map = new ymaps.Map("map", {
         center: [55.033, 73.35],
-        zoom: 8
+        zoom: 8,
       });
       var points = [
         { coords: [55.089, 72.618], name: "Станция Любинская" },
         { coords: [55.701, 72.267], name: "Станция Москаленская" },
-        { coords: [55.161, 73.385], name: "Карбышева-1" }
+        { coords: [55.161, 73.385], name: "Карбышева-1" },
       ];
-      points.forEach(p => {
+      points.forEach((p) => {
         map.geoObjects.add(new ymaps.Placemark(p.coords, { balloonContent: p.name }));
       });
     });
